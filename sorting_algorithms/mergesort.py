@@ -7,10 +7,8 @@ def mergeSort(arr: list[int]) -> list[int]:
         return arr
     
     m: int = n // 2
-    l_arr: list[int] = arr[:m]
-    r_arr: list[int] = arr[m:]
-    mergeSort(arr= l_arr)
-    mergeSort(arr= r_arr)
+    l_arr: list[int] = mergeSort(arr= arr[:m])
+    r_arr: list[int] = mergeSort(arr= arr[m:])
     
     i: int = 0 # merged list index
     j: int = 0 # l_arr index
