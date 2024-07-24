@@ -1,0 +1,5 @@
+# ignore all executable files
+*.out
+
+# ignore all .log files
+*.log
